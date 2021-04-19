@@ -1,5 +1,14 @@
-import React from "react";
-import { render } from "react-dom";
-import App from "./App";
+const elevenShieldRecipe = {
+  leatherStrips: 2,
+  ironIngot: 1,
+  refinedmoonstone: 4,
+};
 
-render(<App />, document.getElementById("app"));
+const elevenMoonReceipe = {
+  ...elevenShieldRecipe,
+  leather: 1,
+  refinedmoonstone: 3,
+};
+
+console.log(elevenShieldRecipe);
+console.log(elevenMoonReceipe);
