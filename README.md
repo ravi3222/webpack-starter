@@ -190,3 +190,84 @@ mode = "production";
 "build-dev":"webpack"
 
 yarn run build-dev
+
+## 10. css-loader mini-css-extract-plugin
+
+yarn run build -dev
+
+css loader error...
+
+Install
+yarn add -D css-loader mini-css-extract-plugin
+
+```
+Added below configuration to webpack
+
+
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+rules: [
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+      },
+]
+
+```
+
+yarn start
+
+Previously live reloading by default
+
+## 11. Hot reloading
+
+```
+Added `hot:true` in devServer
+
+devServer: {
+    contentBase: "./dist",
+    hot: true,
+  },
+
+```
+
+## 12. SCSS
+
+\_global.scss, \_variables.scss and index,scss into styles folder
+
+yarn start // Error for sass loader
+
+yarn add -D sass sass-loader
+
+````
+{
+        test: /\.s?css$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ],
+      }
+
+      ```
+
+
+yarn run build-dev
+
+yarn add -D postcss postcss-preset-env postcss-loader
+
+
+```
+
+{
+test: /\.s?css$/i,
+use: [
+      MiniCssExtractPlugin.loader,
+      "css-loader",
+      "postcss-loader",
+      "sass-loader",
+  ],
+},
+```
+```
+````
