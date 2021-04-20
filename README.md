@@ -304,3 +304,9 @@ resolve: {
         type: "asset/resource",
       },
 ```
+
+## 16. html plugin
+
+yarn add -D html-webpack-plugin
+yarn add -D html-webpack-plugin@next
+yarn add -D clean-webpack-plugin
