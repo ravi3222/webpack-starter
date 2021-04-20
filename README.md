@@ -271,3 +271,27 @@ use: [
 ```
 ```
 ````
+
+## 13. React
+
+yarn add @babel/preset-react
+
+In babel.config.js
+
+```
+module.exports = {
+  presets: [
+    "@babel/preset-env",
+    ["@babel/preset-react", { runtime: "automatic" }],
+  ],
+};
+
+```
+
+## 14.
+
+```
+resolve: {
+    extensions: [".js", ".jsx"],
+  },
+```
