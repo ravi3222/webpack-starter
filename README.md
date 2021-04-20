@@ -295,3 +295,12 @@ resolve: {
     extensions: [".js", ".jsx"],
   },
 ```
+
+## 15. Handling images
+
+```
+{
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset/resource",
+      },
+```
